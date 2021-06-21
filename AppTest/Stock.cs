@@ -11,18 +11,14 @@ using System.Text;
 
 namespace AppTest
 {
-    [Activity(Label = "Home")]
-    public class Activity1 : Activity
+    [Activity(Label = "Stock")]
+    public class Stock : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.HomeScreen);
+
             // Create your application here
-            
-            
         }
-        
-       
     }
 }

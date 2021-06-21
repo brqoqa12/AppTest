@@ -19,7 +19,7 @@ namespace AppTest
             Button button = FindViewById<Button>(Resource.Id.login);
             button.Click += delegate
             {
-                var intent = new Intent(this, typeof(Activity1));
+                var intent = new Intent(this, typeof(Home));
                 StartActivity(intent);
             };
         }
