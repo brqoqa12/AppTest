@@ -19,11 +19,7 @@ namespace AppTest
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.HomeScreen);
             // Create your application here
-            var butt1 = FindViewById<ImageButton>(Resource.Id.imageView1);
-            butt1.Click += (e, o) =>
-            {
-                Toast.MakeText(this, string.Format("image clicked"), ToastLength.Short).Show();
-            };
+            
             
         }
         
