@@ -17,8 +17,14 @@ namespace AppTest
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+            SetContentView(Resource.Layout.client);
             // Create your application here
+            var menu = FindViewById<ImageButton>(Resource.Id.back);
+            menu.Click += delegate
+            {
+                var intent = new Intent(this, typeof(Home));
+                StartActivity(intent);
+            };
         }
     }
 }

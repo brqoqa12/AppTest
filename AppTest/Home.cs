@@ -40,32 +40,32 @@ namespace AppTest
             };
             imagecommande.Click += delegate
             {
-                var intent = new Intent(this, typeof(Client));
+                var intent = new Intent(this, typeof(Commandes));
                 StartActivity(intent);
             };
             btncommande.Click += delegate
             {
-                var intent = new Intent(this, typeof(Client));
+                var intent = new Intent(this, typeof(Commandes));
                 StartActivity(intent);
             };
             imagestock.Click += delegate
             {
-                var intent = new Intent(this, typeof(Client));
+                var intent = new Intent(this, typeof(Stock));
                 StartActivity(intent);
             };
             btnstock.Click += delegate
             {
-                var intent = new Intent(this, typeof(Client));
+                var intent = new Intent(this, typeof(Stock));
                 StartActivity(intent);
             };
             imagestats.Click += delegate
             {
-                var intent = new Intent(this, typeof(Client));
+                var intent = new Intent(this, typeof(Statistics));
                 StartActivity(intent);
             };
             btnstats.Click += delegate
             {
-                var intent = new Intent(this, typeof(Client));
+                var intent = new Intent(this, typeof(Statistics));
                 StartActivity(intent);
             };
 
