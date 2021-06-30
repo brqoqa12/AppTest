@@ -20,5 +20,129 @@
             android:layout_marginLeft="5dp"
             android:id="@+id/back" />
     </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="59.8dp"
+        android:id="@+id/linearLayout2" >
+        <TextView
+            android:text="Client :"
+            android:textColor="#5c5a5a"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView1"
+            android:layout_marginTop="12.2dp"
+            android:layout_marginLeft="27.4dp"
+            android:layout_marginRight="1.1dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="50.3dp"
+        android:id="@+id/linearLayout3" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="386.3dp"
+            android:layout_height="match_parent"
+            android:hint="Nom"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:id="@+id/textInputEditText1"
+            android:layout_marginLeft="23.2dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="50.3dp"
+        android:id="@+id/linearLayout4"
+        android:layout_marginTop="9.5dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="386.3dp"
+            android:layout_height="match_parent"
+            android:hint="Prenom"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:id="@+id/textInputEditText2"
+            android:layout_marginLeft="23.2dp" />
+
+    </LinearLayout>
+     <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="50.3dp"
+        android:id="@+id/linearLayout5"
+        android:layout_marginTop="9.5dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="386.3dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"
+            android:hint="ICE"
+            android:textColorHint="@android:color/darker_gray"
+            android:id="@+id/textInputEditText2"
+            android:layout_marginLeft="23.2dp" />
+
+    </LinearLayout>
+     <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="50.3dp"
+        android:id="@+id/linearLayout6"
+        
+        android:layout_marginTop="9.5dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="386.3dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"
+            android:hint="adresse"
+            android:textColorHint="@android:color/darker_gray"
+            android:id="@+id/textInputEditText2"
+            android:layout_marginLeft="23.2dp" />
+
+    </LinearLayout>
+     <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="50.3dp"
+        android:id="@+id/linearLayout7"
+        android:layout_marginTop="9.5dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="386.3dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"
+            android:hint="Téléphone"
+            android:textColorHint="@android:color/darker_gray"
+            android:id="@+id/textInputEditText2"
+            android:layout_marginLeft="23.2dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="64.0dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/linearLayout8" >
+        <Button
+            android:text="Ajouter"
+            android:background="@drawable/custombutton"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:id="@+id/button1"
+            android:layout_marginLeft="146.8dp" />
+    </LinearLayout>
 
 </LinearLayout>
