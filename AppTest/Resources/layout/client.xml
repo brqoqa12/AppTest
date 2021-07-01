@@ -25,19 +25,24 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="59.8dp"
+        android:layout_height="60dp"
         android:id="@+id/linearLayout2" >
         <TextView
-            android:text="Client :"
+            android:text="Client "
             android:textColor="#5c5a5a"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/textView1"
-            android:layout_marginTop="12.2dp"
-            android:layout_marginLeft="27.4dp"
-            android:layout_marginRight="1.1dp" />
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="15dp" />
     </LinearLayout>
+    <View
+        android:background="#5c5a5a"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginHorizontal="5dp"/>
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -46,15 +51,22 @@
         android:layout_height="50.3dp"
         android:id="@+id/linearLayout3" >
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="386.3dp"
+            android:layout_width="300dp"
             android:layout_height="match_parent"
             android:hint="Nom"
+            android:paddingLeft="5dp"
             android:textColor="@android:color/black"
             android:textColorHint="@android:color/darker_gray"
             android:id="@+id/textInputEditText1"
             android:layout_marginLeft="23.2dp" />
 
     </LinearLayout>
+    <View
+        android:background="#e2e2e2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="90dp"/>
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -64,15 +76,22 @@
         android:id="@+id/linearLayout4"
         android:layout_marginTop="9.5dp">
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="386.3dp"
+            android:layout_width="300dp"
             android:layout_height="match_parent"
             android:hint="Prenom"
+            android:paddingLeft="5dp"
             android:textColor="@android:color/black"
             android:textColorHint="@android:color/darker_gray"
             android:id="@+id/textInputEditText2"
             android:layout_marginLeft="23.2dp" />
 
     </LinearLayout>
+    <View
+        android:background="#e2e2e2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="90dp"/>
      <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -82,15 +101,22 @@
         android:id="@+id/linearLayout5"
         android:layout_marginTop="9.5dp">
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="386.3dp"
+            android:layout_width="300dp"
             android:layout_height="match_parent"
             android:textColor="@android:color/black"
             android:hint="ICE"
+            android:paddingLeft="5dp"
             android:textColorHint="@android:color/darker_gray"
             android:id="@+id/textInputEditText2"
             android:layout_marginLeft="23.2dp" />
 
     </LinearLayout>
+    <View
+        android:background="#e2e2e2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="90dp"/>
      <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -101,15 +127,22 @@
         
         android:layout_marginTop="9.5dp">
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="386.3dp"
+            android:layout_width="300dp"
             android:layout_height="match_parent"
             android:textColor="@android:color/black"
             android:hint="adresse"
+            android:paddingLeft="5dp"
             android:textColorHint="@android:color/darker_gray"
             android:id="@+id/textInputEditText2"
             android:layout_marginLeft="23.2dp" />
 
     </LinearLayout>
+    <View
+        android:background="#e2e2e2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="90dp"/>
      <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -119,10 +152,11 @@
         android:id="@+id/linearLayout7"
         android:layout_marginTop="9.5dp">
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="386.3dp"
+            android:layout_width="300dp"
             android:layout_height="match_parent"
             android:textColor="@android:color/black"
             android:hint="Téléphone"
+            android:paddingLeft="5dp"
             android:textColorHint="@android:color/darker_gray"
             android:id="@+id/textInputEditText2"
             android:layout_marginLeft="23.2dp" />
