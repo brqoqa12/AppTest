@@ -34,49 +34,165 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:id="@+id/linearLayout3">
-        
+
             <TextView
-            android:text="Commandes "
-            android:textColor="#5c5a5a"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView1"
-            android:layout_marginTop="12dp"
-            android:layout_marginLeft="15dp" />
-        
+                android:text="Commandes "
+                android:textColor="#5c5a5a"
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="15dp" />
+
         </LinearLayout>
         <View
-        android:background="#5c5a5a"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginBottom="5dp"
-        android:layout_marginHorizontal="5dp"/>
+            android:background="#4f4e4e"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginHorizontal="5dp"/>
         <LinearLayout
             android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:id="@+id/linearLayout4" >
+            android:id="@+id/linearLayout4">
             <TextView
-                android:text="Client"
-                android:padding="5dp"
-                android:textColor="@android:color/darker_grayoç"
-                android:layout_marginLeft="23.2dp"
+                android:text="Client "
+                android:textColor="#707070"
+                android:textSize="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="7dp"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/textView2"
-                android:layout_marginRight="8.4dp" />
+                android:id="@+id/textView2" />
+
+            
+            
+                <Spinner
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:id="@+id/spinnerClient"
+                android:paddingLeft="5dp"
+                android:spinnerMode="dialog"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bababa"
+            android:layout_marginHorizontal="25dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:text="Date "
+                android:textColor="#707070"
+                android:textSize="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView4" />
+
+                
+
+                <TextView
+                android:text="- Choisir une date -"
+                android:textColor="#707070"
+                android:textSize="15dp"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="37dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3" />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bababa"
+            android:layout_marginHorizontal="25dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/linearLayout5">
+
+            <TextView
+                android:text="Article "
+                android:textColor="#707070"
+                android:textSize="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView5" />
+            
+            
+
             <Spinner
                 android:layout_width="200dp"
-                android:layout_height="match_parent"
-                android:id="@+id/spinner1"
+                android:layout_height="40dp"
+                android:id="@+id/spinnerArticle"
                 android:paddingLeft="5dp"
-                android:layout_marginLeft="0.0dp" />
+                android:spinnerMode="dialog"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp" />
+
+
         </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bababa"
+            android:layout_marginHorizontal="25dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/linearLayout6">
+
+            <TextView
+                android:text="Quantité "
+                android:textColor="#707070"
+                android:textSize="18dp"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView6" />
+            <EditText
+                android:inputType="number"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:id="@+id/editText1" />
+            
         
-    
+        
+        </LinearLayout>
+        <Button
+            android:text="Commander"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="120dp"
+            android:background="@drawable/custombutton"
+            android:id="@+id/button1" />
+
+
+
     </LinearLayout>
     
 </LinearLayout>
