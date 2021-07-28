@@ -52,61 +52,76 @@ namespace AppTest
         private void Popup_MenuItemClick(object sender, PopupMenu.MenuItemClickEventArgs e)
         {
             string charttype = e.Item.TitleFormatted.ToString();
-            DrawChart(charttype);
+            DrawChart("Graphique");
             chartOptionsText.Text = charttype;
         }
 
         void DrawChart(string charttype) 
         {
             List<ChartEntry> Datalist = new List<ChartEntry>();
-            Datalist.Add(new ChartEntry(100)
+            Datalist.Add(new ChartEntry(10000)
             {
-                Label = "Janvier",
-                ValueLabel = "100",
-                Color = SKColor.Parse("#e6654e"),
-                ValueLabelColor=SKColor.Parse("#e6654e")
+                Label = "1 janvier",
+                ValueLabel = "10000DHS",
+                Color = SKColor.Parse("#dbfc03"),
+                ValueLabelColor = SKColor.Parse("#dbfc03")
             });
 
-            Datalist.Add(new ChartEntry(90)
+            Datalist.Add(new ChartEntry(11000)
             {
-                Label = "Février",
-                ValueLabel = "90",
-                Color = SKColor.Parse("#de3012"),
-                ValueLabelColor = SKColor.Parse("#de3012")
+                Label = "15 janvier",
+                ValueLabel = "11000DHS",
+                Color = SKColor.Parse("#9dfc03"),
+                ValueLabelColor = SKColor.Parse("#9dfc03")
             });
 
-            Datalist.Add(new ChartEntry(210)
+            Datalist.Add(new ChartEntry(9000)
             {
-                Label = "Mars",
-                ValueLabel = "210",
-                Color = SKColor.Parse("#27bd02"),
-                ValueLabelColor = SKColor.Parse("#27bd02")
+                Label = "1 fèvrier",
+                ValueLabel = "9000DHS",
+                Color = SKColor.Parse("#fc4e03"),
+                ValueLabelColor = SKColor.Parse("#fc4e03")
             });
 
-            Datalist.Add(new ChartEntry(200)
+            Datalist.Add(new ChartEntry(9500)
             {
-                Label = "Avril",
-                ValueLabel = "200",
-                Color = SKColor.Parse("#bff230"),
-                ValueLabelColor = SKColor.Parse("#bff230")
+                Label = "15 février",
+                ValueLabel = "9500DHS",
+                Color = SKColor.Parse("#fc8003"),
+                ValueLabelColor = SKColor.Parse("#fc8003")
             });
 
-            Datalist.Add(new ChartEntry(150)
+            Datalist.Add(new ChartEntry(10000)
             {
-                Label = "Mai",
-                ValueLabel = "150",
-                Color = SKColor.Parse("#f06d22"),
-                ValueLabelColor = SKColor.Parse("#f06d22")
+                Label = "1 mars",
+                ValueLabel = "10000DHS",
+                Color = SKColor.Parse("#dbfc03"),
+                ValueLabelColor=SKColor.Parse("#dbfc03")
             });
 
-            if (charttype == "Graphique en points")
+            Datalist.Add(new ChartEntry(11000)
             {
-                var chart = new PointChart()
+                Label = "15 mars",
+                ValueLabel = "11000DHS",
+                Color = SKColor.Parse("#9dfc03"),
+                ValueLabelColor = SKColor.Parse("#9dfc03")
+            });
+
+            Datalist.Add(new ChartEntry(13000)
+            {
+                Label = "1 avril",
+                ValueLabel = "13000DHS",
+                Color = SKColor.Parse("#04c71b"),
+                ValueLabelColor = SKColor.Parse("#04c71b")
+            });
+            if (charttype == "Graphique")
+            {
+                var chart = new LineChart()
                 { Entries = Datalist, LabelTextSize = 30f };
                 chartview.Chart = chart;
             }
 
-            else if (charttype == "Graphique radar")
+            /*else if (charttype == "Graphique radar")
             {
                 var chart = new RadarChart()
                 { Entries = Datalist, LabelTextSize = 30f };
@@ -132,7 +147,7 @@ namespace AppTest
                 var chart = new BarChart()
                 { Entries = Datalist, LabelTextSize = 30f };
                 chartview.Chart = chart;
-            }
+            }*/
 
         }
         

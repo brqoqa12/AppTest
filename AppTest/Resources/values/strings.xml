@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">AppTest</string>
     <string name="action_settings">Settings</string>
+	<string name="Client">Choisir un client</string>
+	<string-array name="client_array">
+		<item>Client1</item>
+		<item>Client2</item>
+		<item>Client3</item>
+	</string-array>
+	<string name="Article">Choisir un article</string>
+	<string-array name="article_array">
+		<item>Article1</item>
+		<item>Article2</item>
+		<item>Article3</item>
+	</string-array>
 	
 </resources>

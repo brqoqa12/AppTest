@@ -32,8 +32,27 @@ namespace AppTest
 
             var menu = FindViewById<ImageButton>(Resource.Id.back);
             menu.Click += delegate { base.OnBackPressed(); };
+            
+            Spinner spinner = FindViewById<Spinner>(Resource.Id.spinnerClient);
+            spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
+            var adapter = ArrayAdapter.CreateFromResource(this, Resource.Array.client_array, Android.Resource.Layout.SimpleSpinnerItem);
+            adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+            spinner.Adapter = adapter;
+
+            Spinner spinner1 = FindViewById<Spinner>(Resource.Id.spinnerArticle);
+            spinner1.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
+            var adapter1 = ArrayAdapter.CreateFromResource(this, Resource.Array.article_array, Android.Resource.Layout.SimpleSpinnerItem);
+            adapter1.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+            spinner1.Adapter = adapter1;
 
 
+        }
+
+        private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        {
+            Spinner spinner = (Spinner)sender;
+            string toast = string.Format("{0}", spinner.GetItemAtPosition(e.Position));
+            Toast.MakeText(this, toast, ToastLength.Long).Show();
         }
 
         private void openDialogOnclick(object sender, EventArgs e)
